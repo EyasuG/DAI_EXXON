@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body id="myBody">
+    <table id="Variables-table"></table>
+ <fieldset>
+    <label>SubK Breakdown</label>
+    <br/>
+    <lable>The chart below is a view of what happens when subcontracting occurs</lable>
+    <br/>
+    <span><button>Total Value<div>[total_value]</div></button></span>
+    <br/>
+    <lable>Goods Labor Split: Apply goods_percent to split value into Goods and Labor (at the CIV level)</lable>
+    <br/>
+<button>Total Goods[includes Profit and OGA)<div>[total_goods]</div></button><span><button>Total Labor (includes Profit and OGA)<div>[total_labor]</div></button></span>
+<br/>
+<lable>Open for Local Competition: Apply open_goods and open_labor via estimate and range (CIV level)</lable>
+<br/>
+<button>Open Goods - includes Profit and OGA<div>[open_goods]</div></button><span><button>Non Open Goods<div>[non_open_goods]</div></button></span><span><button>Open Labor(includes Profit and OGA)<div>[total_labor</div></button></span><span><button>Non Open Labor<div>[non_open_labor]</div></button></span>
+<br/>
+<lable>Split based on the Awarding Type: Fully Local Awardings are those won by fully local firms. Subconratable Awards are those won by a Tier 1 or Fully Foreign firms ("Prime" contractors)</lable>
+<br/>
+<button>Fully Local Goods<div>[fully_local_goods]</div></button><span><button> Prime Awarded Goods (subcontractable <div>[prime_awarded_goods]</div></button></span><span><button>Non Open Goods<div>[non_open_goods]</div></button></span><span><button>Fully Local Labor<div>[fully_local_labor]</div></button></span><span><button>Prime Awarded Labor(subcontractable)<div>[prime_awarded_goods]</div></button></span><span><button>Non Open Labor <div>non_open_labor</div></button></span>
+<br/>
+<lable>Prime takes Profit</lable>
+<br/>
+<button>Fully Local Goods</button><span><button>subcontractable Goods after Profit removed</button></span><span><button>Prime Goods Profit</button></span><span><button>Non open Goods</button></span><span><button>Fully LOcal Labor</button></span><span><button>Subconratable Awardings-Labor after Profit</button></span><span><button>Prime Labor Profit</button></span><span><button>Non Open Labor</button></span>
+<br/>
+<lable>Prime takes OGA</lable>
+<br/>
+<button>Fully Local Goods</button><span><button>subcontractable Goods after Profit removed</button></span><span><button>Prime Goods OGA*</button></span><span><button>Prime Goods Profit</button></span><span><button>Non Open Goods</buton></span><span><button>Fully Local Labor</button></span><span><button>subcontractable Awardings-Labor after Profit and OGA removed</button></span><span><button>Prime Labor OGA*</button></span><span><button>Prime Labor Profit</button></span><span><button>Non Open Labor</button></span>
+<br/>
+<labor>Prime Contractor keeps some work and subcontracts some</labor>
+<br/>
+<button>Fully Local Goods</button><span><button>Subcontracted Goods </button></span><span><button>Prime Goods OGA*</button></span><span><button>Prime Goods Profit</button></span><span><button>Non Open Goods</buton></span><span><button>Fully Local Labor</button></span><span><button>Subcontracted Labor</button></span><span><button>Prime Labor Salary Mixed</button></span><span><button>Prime Labor OGA*</button></span><span><button>Prime Labor Profit</button></span><span><button>Non Open Labor</button></span>
+<br/>
+<lable>Domestic vs Import and Local vs Expat: Split Goods using import_goods (based on CAM/Supplier input data) and Split Labor by skill distribution and salaries (based on CAM/Supplier input data)</lable>
+<br/>
+<button>Fully Local Goods<div>[fully_local_goods]</div></button><span><button>Prime Subcontracted Goods<div>[prime_subcontracted_goods]</div></button></span><span><button>Prime Goods Domestic<div>[prime_goods_domestic]</div></button></span><span><button>Prime Goods Import<div>[prime_goods_import]</div></button></span><span><button>Prime Goods OGA*</button></span><span><button>Prime Goods Profit<div>[prime_goods_profit]</div></buton></span><span><button>Non Open Goods<div>[non_open_goods</div></button></span><span><button>Fully Local Labor<div>[fully_local_labor]</div></button></span><span><button>Prime Subcontracted Labor<div>[prime_subcontracted_labor]</div></button></span><span><button>Prime Labor Salary Local<div>[prime_labor_salary_local]</div></button></span><span><button>Prime Labor Salary Expat<div>[prime-labor_salary_expat]</div></button></span><span><button>Prime Labor OGA*<div>[prime_labor_oga]</div></button></span><span><button>Prime Labor Profit<div>[prime_labor_profit]</div></button></span><span><button>Non Open Labor<div>[non_open_labor]</div></button></span>
+<br/>
+<lable>Split Prime OGA : Part of OGA is considered local content, based on the portion of "work" done in country. Goods: prime_goods_domestic / Prim Goods Mix.   Labor: prime_labor_salary_local / Prime Labor Salary Mixed</lable>
+<br/>
+<button>Fully Local Goods<div>[fully_local_goods]</div></button><span><button>Prime Subcontracted Goods<div>prime_subcontracted_goods</div></button></span><span><button>Prime Goods Domestic<div>[prime_subcontracted_goods]</div></button></span><span><button>Prime Goods Import<div>[prime_goods_import]</div></button></span><button>Prime Goods OGA Local<div>[prime_goods_oga_local]</div></button><span><button>Prime Goods OGA Foreign<div>prime_Goods_oga_foreign</div></button></span><span><button>Prime Good Profit<div>[prime_goods_profit]</div></button></span><span><button>Non Open Goods<div>[non_open_goods]</div></button></span><span><button>Fully Local Labor<div>[fully_local_labor]</div></button></span><span><button>Prime Subcontracted Labor<div>[prime_subcontracted_labor]</div></button></span><span><button>Prime Labor Salary Local<div>[prime_labor_salary_local]</div></button></span><span><button>Prime Labor Salary Expat<div>[prime_labor_salary_expat]</div></button></span><span><button>Prime Labor OGA local<div>[prime_labor_oga_local]</div></button></span><span><button>Prime Labor OGA Foreign<div>[prime_labor_oga_foreign]</div></button></span><span><button>Prime Labor Profit<div>[prime_labor_profit]</div></button></button></span><span><button>Non Open Labor<div>[non_open_labor]</div></button></span>
+<br/>
+<lable>Local Awarding Focus: We now focus on the value that is awarded to local firms. Either via a full local contract or a subcontract</lable>
+<br/>
+<button>Locally Awarded Goods<div>[locally_awarded_goods]<div>Fully Local Goods and Prime Subcontracted Goods</div></button><span><button>Prime Goods Combined</button></span><span><button>Non Open Goods</button></button></span><span><button>Locally Awarded Labor<div>[locally_awarded_labor]</div><div>Fully Local Labor and Prime Subcontracted Labor</div></button></span></button></span><span><button>Prime Combined Labor</button></span><span><button>Non Open Labor</button></span>
+<br/>
+<lable> Profit Margin: Apply profit_margin to both Goods and Labor (based on CAM/Supplier input data)</lable>
+<br/>
+<button>Locally Awarded Goods with OGA</button><span><button>Locally Awarded Goods Profit</button></span><span><button>Prime Goods Combined</button></span><span><button>Non Open Goods</button></span><span><button>Locally Awarded Labor with OGA</button></span><span><button>Locally Awarded Labor Profit</button></span><span><button>Prime Combined Labor</button></span><span><button>Non Open Labor</button></span>
+<br/>
+<lable>OGA: Apply OGA to both Goods and Labor (based on CAM/Supplier input data)</lable>
+<br/>
+<button>Locally Awarded Goods Mixed</button><span><button>Locally Awarded Goods OGA</button></span><span><button>Locally Awarded Goods Profit</button></span><span><button>Prime Goods Combined</button></span><span><button>Non Open Goods></button></span><span><button>Locally Awarded Labor Salary <div>Mixed</div></button></span><span><button>Locally Awarded Labor OGA</button></span><span><button>Locally Awarded Labor Profit</button></span><span><button>Prime Combined Labor</button></span><span><button>Non Open Labor</button></span>
+<br/>
+<lable>Domestic vs Import and Local vs Expat: Split Goods using import_goods (at CIV level) and Split Labor by skill distribution and salaries (based on CAM/Supplier input data)</lable>
+<button>Subk Goods Domestic<div>[subk_goods_domestic]</div></button><span><button>Subk Goods Import<div>[subk_goods_import]</div></button></span><span><button>Subk Goods OGA<div>[subk_goods_oga]</div></button></span><span><button>Subk Goods Profit<div>[subk_goods_profit]</div></button></span><span><button>Prime Goods Combined</button></span><span><button>Non Open Goods</button></span><span><button>Subk Labor Salary local<div>[subk_labor_salary_local]</div></button></span><span><button>Subk Labor Salary Expat<div>[subk_labor_salary_expact]</div></button></span><span><button>Subk Labor OGA<div>[subk_labor_oga]</div></button></span><span><button>Subk Labor Profit<div>[subk_labor_profit]</div></button></span><span><button>Prime Combined Labor</button></span><span><button>Non Open Labor</button></span>
+<br/>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  
+</body>
+</html>
