@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    
+</head>
+ <body >
+  <container id="A">
+ 
+    <fieldset id="one">
+     <label id="one_1">Combined Breakdown</label>
+    </fieldset>
+     <br/>
+     <fieldset id="two">
+      <label class="one">The chart below is a combined veiw of both subcontracting and fully local contractor</label>
+     </fieldset>
+      <br/>
+  <button id="name">Total Value <div>[total_value]</div></button>
+  <br/>
+  <fieldset id="three">
+  <lable class="two">Goods Labor Splite:Applay goods_percent to splite value into Goods and Labour[at the CIV level]</lable>
+  </fieldset>
+  <br/>
+  <button id="Goods">Total Goods[including profit and OGA]<div>[total_goods]</div></button ><span><button id="TL">Total Labor[includes profit and OGI]<div>[total_labor]</div></button></span>
+  <br/>
+  <fieldset id="four">
+ <lable class="three">open for Local competation : Applay open_goods and open_labour via estimate and range(CIV level)</leble>   
+  </fieldset>
+ <br/>
+ <button id="Goods">Total Goodes[including profit and OGA]<div>[open_goods]</div></button><span><button id="OG"> Open Goods<div>[non_open_goods]</div></button></span></button><span><button id="OL">Open Labour[includes profit and OGA]<div>[open_labor]</div></button></span><span><button id="Non1">Non Open Labor<div>[non_open_labors]</div></button></span>
+ <br/>
+ <fieldset id="five">
+ <label class="four">split based on Awarding Type:Fully Local Awardings are those won by Fully local firms.subcontratable Awards are those won by atier 1 or Fully foreign firms("prime" contractors).</label>
+ </fieldset>
+ <br/>
+ <button id="FLG">Fully Local Goodes<div>[fully_local_goods]</div></button><span><button id="PAG"> Prime Awarded Goods(subcontratable)<div>[prime_awarded_goods]</div></button></span><span><button id="NOG">Non Open Goods<div>[non_open_goods]</div></button></span><span><button id="FLL">Fully Local Labor<div>[fully_local_labor]</div></button></span><span><button id="PAL">prime Awarded Labor(subcontratable)<div>[prime_awarded_goods]</div></button></span><span><button id="Non1">Non Open Labor<div>[non_open_labors]</div></button></span>
+ <br/>
+ <fieldset id="six">
+ <label class="five">prime takes profit</label>
+ </fieldset>
+ <br/>
+ <button id="FLG">Fully Local Goods</button><span><button id="sGPR">subcontratable Goods after profit removed</button></span><span><button id="PGF">prime Goods profit</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="FLL">Fully Local Labor</button></span><span><button id="sLPR">subcontratable Labor after profit removed</button></span><span><button id="PLP">prime Labor profit</button></span><span><button id="Non2">Non Open Labor</button></span>
+<br/>
+<fieldset id="seven">
+ <lable class="six">prime takes OGA</lable>
+</fieldset>
+ <br/>
+<button id="FLG">Fully Local Goods</button><span><button id="sGPOR">subcontratable Goods after profit and OGA removed</button></span><span><button id="PGO">prime Goods OGA*</button></span><span><button id="PGP">prime Goods profit</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="FLL">Fully Local Labor</button></span><span><button id="sALPOR">subcontratable Awardings-Labor after profit and OGA removed</button></span><span><button id="PLO">prime labor OGA*</button></span><span><button id="PLP">prime Labor profit</button></span><span><button id="Non2">Non Open Labor</button></span>
+<br/>
+<fieldset id="eight">
+<label class="seven">prime contractor Keeps some work and subcontracts some</label>
+</fieldset>
+<br>
+<button id="FLG">Fully Local Goods</button><span><button id="sG">subcontracted Goods</button></span><span><button id="PGM">prime Goods Mixed</button></span><span><button id="PGO">prime Goods OGA*</button></span><span><button id="PGP">prime Goods profit</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="FLL">Fully Local Labor</button></span><span><button id="sL">subcontracted Labor</button></span><span><button id="PLSM">prime Labor Salary Mixed</button></span><span><button id="PLO">prime labor OGA*</button></span><span><button id="PLP">prime Labor profit</button></span><span><button id="Non2">Non Open Labor</button></span>
+<br/>
+<fieldset id="nine">
+<lable class="eight">Domestic vs Importe and Local vs Expat:split Goods using importe_(based on CAM/Supplier input data)and split Labor by skill distribuition and salaries(based on CAM/Supplier input data) </lable>
+</fieldset>
+<br/>
+<button id="FLG">Fully Local Goods<div>[fully_local_goods]</div></button><span><button id="PsG">prime subcontracted Goods<div>[prime_subcontracted_goods]</div></button></span><span><button id="PGD">prime Goods Domestic<div>[prime-goods_domestic]</div></button></span><span><button id="PGI">Prime Goods Importe<div>[prime_goods_import]</div></button></span><span><button id="PGO">Prime Goods OGA*<div>[prime_goods_oga]</div></button></span><span><button id="NOG">Non Open Goods<div>[non_open_goods]</div></button></span><span><button id="FLL">Fully Local Labor<div>[fully_local_labor]</div></button></span><span><button id="PLSL">Prime Labor Salary Local<div>[prime_labor_salary_local]</div></button></span><span><button id="PLSE">Prime Labor Salary Expat<div>[prime_labor_salary_expat]</div></button></span><span><button id="PLO">Prime Labor OGA*<div>[prime_labor_oga]</div></button></span><span><button id="PLP">Prime Labor Profit<div>[prime_labor_profit]</div></button></span><span><button id="Non1">Non Open Labor<div>[non_open_labor]</div></button></span>
+<br/>
+<fieldset id="ten">
+<label class="nine">Local Awarding Focus:We now focus on the value that is awarded to local firms,either via a full local contract or a subcontract</label>
+</fieldset>
+<br/>
+<button id="LAG">Locally Awarded Goods<div>[locally_awarded_goods]</div><div>Fully Local Goods and Prime subcontracted Goods</div></button><span><button id="PGC">Prime Goods Combined</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="LAL">Locally Awarded Labor<div>[locally_awarded_labor]</div><div>Fully Local Labor and Prime subcontracted Labor</div></button></span><span><button id="PCL">Prime Combined Labor</button></span><span><button id="Non1">Non Open Labor</button></span>
+<br/>
+  <fieldset id="eleven">
+<label class="ten">Profit Margin:Applay profit_margin to both Goods and Labor(based on CMA/Supplier input data)</label>
+  </fieldset>
+<br/>
+<button id="LAGWO">Locally Awarded Goods with OGA</button><span><button id="LAGP">Locally Awarded Goods Profit</button></span><span><button id="PGC">Prime Goods Combined</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="LALWO">Locally Awarded Labor with OGA</button></span><span><button id="LALP">Locally Awarded Labor Profit</button></span><span><button id="PCL">Prime Combined Labor</button></span><span><button id="Non1">Non Open Labor</button></span>
+<br/>
+<fieldset id="twelve">
+<label class="eleven">OGA:Apply OGA to both Goods and Labor(based on CMA/Supplier input data)</label>
+</fieldset>
+<br/>
+<button id="LAGM">Locally Awarded Goods Mixed</button><span><button id="LAGO">Locally Awarded Goods OGA</button></span><span><button id="LAGP">Locally Awarded Goods Profit</button></span><span><button id="PGC">Prime Goods Combined</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="LALSM">locally Awarded Labor Salary Mixed</button></span><span><button id="LALO">Locally Awarded Labor with OGA</button></span><span><button id="LALP">Locally Awarded Labor Profit</button></span><span><button id="PCL">Prime Combined Labor</button></span><span><button id="Non1">Non Open Labor</button></span>
+<br/>
+<fieldset id="t13">
+<label class="twelve">Domestic vs Import and Local vs Exapat:Split Goods using importe_goods(at CIV level) and Split Labor by skill distribution and salaries(based on CMA/Supplier input data)</label>
+</fieldset>
+<br/>
+<button id="LAGD">Locally Awarded Goods Domestic<div>[locally_awarded_goods_Domestic]</div></button><span><button id="LAGI">Locally Awarded Goods Import<div>[locally_awarded_goods_import]</div></button></span><span><button id="LAGO">Locally Awarded Goods OGA<div>[locally_awarded_goods_oga]</div></button></span><span><button id="LAGP">Locally Awarded Goods Profit<div>[locally_awarded_goods_profit]</div></button></span><span><button id="PGC">Prime Goods Combined</button></span><span><button id="NOG">Non Open Goods</button></span><span><button id="LALSL">Locally Awarded Labor Salary Local<div>[locally_awarded_labor_salary_local]</div></button></span><SPAN><button id="LALSE">Locally Awarded Labor Salary Expat<div>[locally_awarded_labor_salary_expat]</div></button></SPAN><span><button id="LALO">Locally Awarded Labor OGA<div>[locally_awarded_labor_oga]</div></button></span><span><button id="LALP">Locally Awarded Labor Profit<div>[locally_awarded_labor_profit]</div></button></span><span><button id="PCL">Prime Combined Labor</button></span><span><button id="Non1">Non Open Labor</button></span>
+  </container>
+</body>
+<script src="./js/main.js"></script>
+</html> 
